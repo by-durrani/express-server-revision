@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="/server.js" type="module"></script>
+    <script defer src="/browsesr.js" type="module"></script>
+  </head>
+  <body>
+    <%- include('partials/navbar.ejs') %>
+
+    <section class="flex justify-center items-center min-h-[calc(100dvh-86px)]">
+      <form
+        method="post"
+        action="/api/auth"
+        class="flex flex-col gap-4 bg-white p-6 rounded shadow-md text-black"
+      >
+        <input
+          name="username"
+          placeholder="username"
+          class="p-2 border rounded"
+        />
+        <input name="email" placeholder="email" class="p-2 border rounded" />
+        <input
+          name="password"
+          type="password"
+          placeholder="password"
+          class="p-2 border rounded"
+        />
+        <button
+          type="submit"
+          class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-400 transition"
+        >
+          Login
+        </button>
+      </form>
+    </section>
+  </body>
+</html>

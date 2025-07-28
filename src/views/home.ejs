@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="/server.js" type="module"></script>
+    <script defer src="/browser.js" type="module"></script>
+  </head>
+  <body class="">
+    <%- include('partials/navbar.ejs') %>
+    <main class="px-8 mt-6">
+      <h1 id="heading" class="text-4xl font-bold">Hello <%= username %></h1>
+
+      <section class="mt-8"></section>
+    </main>
+  </body>
+</html>
