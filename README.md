@@ -5,7 +5,7 @@ A TypeScript-based Express.js server setup with modular routing, view rendering 
 ## 🔧 Tech Stack
 
 - **Backend**: Node.js, Express.js
-- **Language**: TypeScript
+- **Language**: Js, TypeScript
 - **View Engine**: EJS
 - **Package Manager**: Bun (via `bun.lock`)
 - **Environment**: `.env` for configuration
