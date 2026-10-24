@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "bun run src/main.ts",
-    "dev": "bun run --watch src/main.ts",
-    "build": "bun run build src/main.ts --outdir=dist --target=node"
+    "start": "node init && bun run src/main.ts",
+    "dev": "node init && bun run --watch src/main.ts",
+    "build": "node init && bun run build src/main.ts --outdir=dist --target=node"
   },
   "devDependencies": {
     "@types/bun": "latest",
