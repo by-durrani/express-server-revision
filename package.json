@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "bun run src/main.ts",
-    "dev": "bun run --watch src/main.ts",
-    "build": "bun run build src/main.ts --outdir=dist --target=node"
+    "start": "node init && bun run src/main.ts",
+    "dev": "node init && bun run --watch src/main.ts",
+    "build": "node init && bun run build src/main.ts --outdir=dist --target=node"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -27,10 +27,12 @@
     "@types/jsonwebtoken": "^9.0.10",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-rate-limit": "^8.0.1",
     "helmet": "^8.1.0",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "node-fetch": "^3.3.2"
   }
 }
